@@ -12,10 +12,10 @@ if [ "$PWD" != "$WORKSPACE_DIR" ]; then
   exit 1
 fi
 
-export TestsFolder=../Source/Example/Catalog/Tests
-export SlnFile=../Source/Example/Catalog/Catalog.sln
-export WebBinFolder=../Source/Example/Catalog/Web/bin
-export AngularFolder=../Source/Example/Catalog/Web.Angular
+export TestsFolder=../Source/VolunteerReporting/Tests
+export SlnFile=../Source/VolunteerReporting/VolunteerReporting.sln
+export WebBinFolder=../Source/VolunteerReporting/Web/bin
+export AngularFolder=../Source/VolunteerReporting/Web.Angular
 
 cat Build/appveyor.yml
 

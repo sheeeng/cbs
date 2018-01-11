@@ -17,11 +17,6 @@ export SlnFile=../Source/Admin/Admin.sln
 export WebBinFolder=../Source/Admin/Web/bin
 export AngularFolder=../Source/Admin/Web.Angular
 
-sed -i 's/<path to the test folder>/..\/Source\/Admin\/Tests/g' Build/appveyor.yml
-sed -i 's/<path to the solution file>/..\/Source\/Admin\/Admin.sln/g' Build/appveyor.yml
-sed -i 's/<path to the bin folder of the web project>/..\/Source\/Admin\/Web\/bin/g' Build/appveyor.yml
-sed -i 's/<path to the Angular folder of the web project>/..\/Source\/Admin\/Web.Angular/g' Build/appveyor.yml
-
 cat Build/appveyor.yml
 
 cd ${BUILD_DIR} && ./build.sh
