@@ -15,4 +15,4 @@ fi
 
 cp -rfv ${BUILD_DIR}/* ${BUILD_TARGET_DIR}
 
-cd ${BUILD_TARGET_DIR} && build.sh
+cd ${BUILD_TARGET_DIR} && ./build.sh
