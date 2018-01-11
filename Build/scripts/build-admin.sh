@@ -12,6 +12,11 @@ if [ "$PWD" != "$WORKSPACE_DIR" ]; then
   exit 1
 fi
 
+export TestsFolder=../Source/Admin/Tests
+export SlnFile=../Source/Admin/Admin.sln
+export WebBinFolder=../Source/Admin/Web/bin
+export AngularFolder=../Source/Admin/Web.Angular
+
 sed -i 's/<path to the test folder>/..\/Source\/Admin\/Tests/g' Build/appveyor.yml
 sed -i 's/<path to the solution file>/..\/Source\/Admin\/Admin.sln/g' Build/appveyor.yml
 sed -i 's/<path to the bin folder of the web project>/..\/Source\/Admin\/Web\/bin/g' Build/appveyor.yml
