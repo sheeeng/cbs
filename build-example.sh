@@ -13,5 +13,6 @@ if [ "$PWD" != "$WORKSPACE_DIR" ]; then
   exit 1
 fi
 
-cd $BUILD_TARGET_DIR \
-  && ${BUILD_DIR}/build.sh
+cp -rfv ${BUILD_DIR}/* ${BUILD_TARGET_DIR}
+
+cd ${BUILD_TARGET_DIR} && build.sh
