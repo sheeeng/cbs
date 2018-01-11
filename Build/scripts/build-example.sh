@@ -12,7 +12,7 @@ if [ "$PWD" != "$WORKSPACE_DIR" ]; then
   exit 1
 fi
 
-sed -i 's/<<path to the test folder>>/..\/Source\/Example\/Catalog\/Tests/g' Build/appveyor.yml
+sed -i 's/<path to the test folder>/..\/Source\/Example\/Catalog\/Tests/g' Build/appveyor.yml
 sed -i 's/<path to the solution file>/..\/Source\/Example\/Catalog\/Catalog.sln/g' Build/appveyor.yml
 sed -i 's/<path to the bin folder of the web project>/..\/Source\/Example\/Catalog\/Web\/bin/g' Build/appveyor.yml
 sed -i 's/<path to the Angular folder of the web project>/..\/Source\/Example\/Catalog\/Web.Angular/g' Build/appveyor.yml
