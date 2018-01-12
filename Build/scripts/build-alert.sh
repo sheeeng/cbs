@@ -17,6 +17,4 @@ export SlnFile=../Source/Alert/Alert.sln
 export WebBinFolder=../Source/Alert/Web/bin
 export AngularFolder=../Source/Alert/Web.Angular
 
-cat Build/appveyor.yml
-
 cd ${BUILD_DIR} && ./build.sh

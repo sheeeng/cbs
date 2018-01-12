@@ -17,6 +17,4 @@ export SlnFile=../Source/Example/Catalog/Catalog.sln
 export WebBinFolder=../Source/Example/Catalog/Web/bin
 export AngularFolder=../Source/Example/Catalog/Web.Angular
 
-cat Build/appveyor.yml
-
 cd ${BUILD_DIR} && ./build.sh

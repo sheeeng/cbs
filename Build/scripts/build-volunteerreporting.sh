@@ -17,6 +17,4 @@ export SlnFile=../Source/VolunteerReporting/VolunteerReporting.sln
 export WebBinFolder=../Source/VolunteerReporting/Web/bin
 export AngularFolder=../Source/VolunteerReporting/Web.Angular
 
-cat Build/appveyor.yml
-
 cd ${BUILD_DIR} && ./build.sh

@@ -17,6 +17,4 @@ export SlnFile=../Source/UserManagement/UserManagement.sln
 export WebBinFolder=../Source/UserManagement/Web/bin
 export AngularFolder=../Source/UserManagement/Web.Angular
 
-cat Build/appveyor.yml
-
 cd ${BUILD_DIR} && ./build.sh
